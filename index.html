@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TANASHI Pomodoro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>⏳ TANASHI Pomodoro</h1>
+
+    <section class="display">
+      <div id="mode" class="mode">Фокус</div>
+      <div id="time" class="time">25:00</div>
+    </section>
+
+    <section class="controls">
+      <button id="start">Старт</button>
+      <button id="pause">Пауза</button>
+      <button id="reset">Рестарт</button>
+      <button id="skip">Прескочи</button>
+    </section>
+
+    <section class="settings">
+      <h2>Настройки</h2>
+      <label>Фокус (мин): <input id="focusMin" type="number" min="1" value="25"></label>
+      <label>Почивка (мин): <input id="breakMin" type="number" min="1" value="5"></label>
+      <label>Дълга почивка (мин): <input id="longBreakMin" type="number" min="1" value="15"></label>
+      <label>Цикли до дълга почивка: <input id="cycles" type="number" min="1" value="4"></label>
+      <button id="save">Запази</button>
+    </section>
+
+    <section class="stats">
+      <h2>Статус</h2>
+      <p>Завършени фокус сесии: <span id="completed">0</span></p>
+    </section>
+
+    <footer>
+      <small>by <strong>TANASHI</strong> • Code & AI</small>
+    </footer>
+  </main>
+
+  <audio id="beep">
+    <source src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABYBQUFBQUFB" type="audio/wav">
+  </audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
