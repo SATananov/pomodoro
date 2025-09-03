@@ -1,0 +1,21 @@
+# Системни файлове
+.DS_Store
+Thumbs.db
+
+# Node.js зависимости
+node_modules/
+
+# Билд директории
+dist/
+build/
+
+# Околни файлове (env променливи)
+.env
+.env.local
+.env.*.local
+
+# Лог файлове
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
